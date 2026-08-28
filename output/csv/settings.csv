@@ -1,0 +1,1 @@
+id,currency,company_name,company_address,company_phone,company_email,tax_rate,invoice_prefix,bill_prefix,ui_theme,allow_global_negative_stock,google_client_id,google_client_secret,google_refresh_token,google_access_token,google_token_expiry,google_sender_email

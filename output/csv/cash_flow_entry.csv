@@ -1,0 +1,1 @@
+id,direction,amount,amount_minor,account_id,destination_account_id,category_id,subcategory_id,party_id,party_name,party_type,description,note,reference,date_posted,created_by,updated_by,source_type,source_id,account_tx_id,is_void,voided_at,voided_by,void_reason,idempotency_key,revision,created_at,updated_at

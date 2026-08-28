@@ -1,0 +1,8 @@
+key,value
+export_kind,literal_all
+exported_at,2026-08-28T13:18:57.798346
+scope,single_store
+tenant_id,
+tenant_name,
+format_version,2026-04
+source,"Legacy Data28-08-2026_05-31PM.xlsx (migrated, voids removed, orphans recovered)"

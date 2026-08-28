@@ -1,0 +1,5 @@
+id,pending_bill_id,reminder_id,contacted_at,channel,response,note,created_by,created_at
+1,6402,,2026-08-01T10:00:00,Call,1st Aug will pay,,Rehman Ahmed,2026-07-21T15:50:01.619173
+2,6348,,2026-07-21T16:57:13.478715,Call,1st ke baad pay kr dn ga,,Rehman Ahmed,2026-07-21T16:57:13.479216
+3,6658,,2026-08-03T16:00:00,Call,CHAKAR LAGATA HN,,Rehman Ahmed,2026-08-03T12:58:04.554258
+4,6658,,2026-08-03T16:00:00,Call,CHAKAR LAGATA HN,,Rehman Ahmed,2026-08-03T13:23:00.170231

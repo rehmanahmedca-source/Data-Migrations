@@ -1,0 +1,11 @@
+id,category_id,name,is_active,notes,created_at,updated_at
+1,1,Personal loan,True,,2026-08-17T14:34:21.845358,
+2,1,Bank loan,True,,2026-08-17T14:34:21.845366,
+3,6,Petrol,True,,2026-08-17T14:34:21.851282,
+4,6,Diesel,True,,2026-08-17T14:34:21.851286,
+5,6,CNG,True,,2026-08-17T14:34:21.851287,
+6,7,Parts,True,,2026-08-17T14:34:21.852266,
+7,7,Labour,True,,2026-08-17T14:34:21.852268,
+8,7,Workshop,True,,2026-08-17T14:34:21.852270,
+9,9,Personal loan,True,,2026-08-17T14:34:21.854128,
+10,9,Bank loan,True,,2026-08-17T14:34:21.854133,

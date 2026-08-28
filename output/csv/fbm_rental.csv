@@ -1,0 +1,1 @@
+id,client_id,item_id,qty,rent_per_unit,total_amount,qty_returned,paid_amount,discount_amount,start_datetime,return_datetime,status,payment_account_id,note,created_at,updated_at
