@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relay — Data Migration Workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">↗</div><span>relay</span></div>
+    <div class="workspace-label">WORKSPACE</div>
+    <div class="workspace"><span class="workspace-dot"></span><span>Acme migrations</span><span class="chevron">⌄</span></div>
+    <nav>
+      <a class="active" href="#workspace"><span>⊞</span> Migration workspace</a>
+      <a href="#history"><span>◷</span> Run history</a>
+      <a href="#sources"><span>▣</span> Source library <b>4</b></a>
+    </nav>
+    <div class="sidebar-bottom"><div class="workspace-label">STORAGE</div><div class="storage-row"><span class="folder-icon">⌁</span><span>Legacy files</span><span class="dots">•••</span></div><div class="storage-meter"><i></i></div><div class="storage-copy">1.2 GB of 10 GB used</div></div>
+    <div class="user"><div class="avatar">RS</div><div><strong>Riya Shah</strong><small>Admin</small></div><span class="dots">•••</span></div>
+  </aside>
+
+  <main>
+    <header class="topbar"><div class="crumb">Migration workspace <span>/</span> <strong>New migration</strong></div><div class="top-actions"><button class="icon-btn">?</button><button class="icon-btn">⌘</button><div class="avatar small">RS</div></div></header>
+    <section class="content" id="workspace">
+      <div class="intro"><div><div class="eyebrow">NEW MIGRATION <span class="mono">·</span> STEP 01 / 03</div><h1>Bring your data forward.</h1><p>Connect a legacy source and a new schema. Relay will map, validate, and help you migrate without losing a record.</p></div><div class="save-note"><span class="green-dot"></span> Autosaved just now</div></div>
+      <div class="stepper"><div class="step current"><span>1</span><div><b>Connect files</b><small>Choose your sources</small></div></div><div class="step-line"></div><div class="step"><span>2</span><div><b>Review & select</b><small>Validate every record</small></div></div><div class="step-line"></div><div class="step"><span>3</span><div><b>Export</b><small>Choose an output format</small></div></div></div>
+      <div class="section-heading"><div><h2>Connect your files</h2><p>We keep your original files safe in <span class="inline-folder">⌁ Legacy files</span>.</p></div><span class="help">What files can I use? <b>↗</b></span></div>
+      <div class="file-grid">
+        <div class="file-card"><div class="card-top"><div class="card-icon legacy">⌁</div><span class="required">REQUIRED</span></div><h3>Legacy source</h3><p>Upload the old data you want to migrate.</p><label class="dropzone" id="legacyDrop"><input type="file" id="legacyInput" multiple accept=".xlsx,.xls,.csv,.json,.db,.sqlite"><span class="upload-symbol">↑</span><strong>Drop files here or <u>browse</u></strong><small>XLSX, CSV, JSON, DB, SQLite · up to 500 MB</small></label><div class="selected-files" id="legacyFiles"></div></div>
+        <div class="file-card"><div class="card-top"><div class="card-icon schema">⌘</div><span class="required">REQUIRED</span></div><h3>New schema</h3><p>The destination structure your data should fit.</p><label class="dropzone" id="schemaDrop"><input type="file" id="schemaInput" accept=".xlsx,.xls,.csv,.json,.db,.sqlite"><span class="upload-symbol">↑</span><strong>Drop file here or <u>browse</u></strong><small>XLSX, CSV, JSON, DB, SQLite · up to 500 MB</small></label><div class="selected-files" id="schemaFiles"></div></div>
+      </div>
+      <div class="privacy"><span>✦</span><div><b>Your data stays yours</b><p>Files are encrypted at rest and never modified. You choose exactly what gets exported.</p></div><a href="#">Read our security promise ↗</a></div>
+      <div class="footer-actions"><button class="text-btn">Save as draft</button><button class="primary" id="discoverBtn" disabled>Continue to discovery <span>→</span></button></div>
+    </section>
+    <section class="review content hidden" id="review">
+      <div class="intro"><div><div class="eyebrow">REVIEW & SELECT <span class="mono">·</span> STEP 02 / 03</div><h1>Understand every record.</h1><p>We found these record groups after comparing your source to the new schema. Select what should move forward.</p></div><div class="save-note"><span class="green-dot"></span> Discovery complete</div></div>
+      <div class="review-meta"><div><span class="tiny-label">SOURCE</span><b id="sourceName">legacy_records.xlsx</b></div><span class="arrow">→</span><div><span class="tiny-label">TARGET SCHEMA</span><b id="targetName">customer_schema.json</b></div><div class="match-score"><span>FIELD MATCH</span><strong>94%</strong></div></div>
+      <div class="notice"><span>✦</span><div><b>Discovery found 1,248 records across 4 groups</b><p>Review the health of each group and choose what you want to include in your migration.</p></div><button>View field mapping ↗</button></div>
+      <div class="table-tools"><div><h2>Record groups</h2><p><span id="selectedCount">1,112</span> of 1,248 records selected</p></div><div class="tool-buttons"><button id="selectAll">Select all</button><button class="filter">Filter <span>⌄</span></button></div></div>
+      <div class="records"><div class="record head"><span class="check checked"></span><span>GROUP</span><span>RECORDS</span><span>HEALTH</span><span>NOTES</span><span></span></div><div class="record" data-count="842"><span class="check checked"></span><div class="group-name"><span class="status-dot healthy"></span><div><b>Healthy records</b><small>All required fields present</small></div></div><strong>842</strong><span class="pill green">Healthy</span><span class="muted">Ready to migrate</span><span class="row-arrow">→</span></div><div class="record" data-count="270"><span class="check checked"></span><div class="group-name"><span class="status-dot semi"></span><div><b>Partial records</b><small>Some optional fields missing</small></div></div><strong>270</strong><span class="pill amber">Review</span><span class="muted">3 fields affected</span><span class="row-arrow">→</span></div><div class="record" data-count="96"><span class="check"></span><div class="group-name"><span class="status-dot orphan"></span><div><b>Orphan records</b><small>No matching parent in new schema</small></div></div><strong>96</strong><span class="pill red">Blocked</span><span class="muted">Needs a mapping rule</span><span class="row-arrow">→</span></div><div class="record" data-count="40"><span class="check"></span><div class="group-name"><span class="status-dot voided"></span><div><b>Voided records</b><small>Marked inactive in legacy source</small></div></div><strong>40</strong><span class="pill gray">Voided</span><span class="muted">Excluded by default</span><span class="row-arrow">→</span></div></div>
+      <div class="footer-actions"><button class="text-btn" id="backBtn">← Back to files</button><button class="primary" id="exportBtn">Continue to export <span>→</span></button></div>
+    </section>
+    <section class="review content hidden" id="export"><div class="intro"><div><div class="eyebrow">EXPORT <span class="mono">·</span> STEP 03 / 03</div><h1>Make it yours.</h1><p>Choose where to save your migrated data and give this output a name your team will recognize.</p></div></div><div class="export-card"><h2>Output settings</h2><label>OUTPUT NAME<input id="outputName" value="acme-customer-migration" /></label><label>FORMAT</label><div class="format-grid"><button class="format selected"><b>CSV</b><small>Universal & simple</small><span>✓</span></button><button class="format"><b>JSON</b><small>Structured records</small></button><button class="format"><b>XLSX</b><small>Spreadsheet workbook</small></button><button class="format"><b>SQLite</b><small>Portable database</small></button></div><label>OUTPUT FOLDER<div class="folder-path">⌁ / Exports / <b id="folderPreview">acme-customer-migration</b> <span>↗</span></div></label></div><div class="privacy"><span>✓</span><div><b>Ready for a safe export</b><p><span id="exportCount">1,112</span> records will be copied. Your legacy files remain untouched.</p></div></div><div class="footer-actions"><button class="text-btn" id="reviewBack">← Back to review</button><button class="primary" id="finishBtn">Create export <span>→</span></button></div></section>
+  </main><div class="toast" id="toast">Export created successfully.</div><script src="app.js"></script>
+</body></html>
