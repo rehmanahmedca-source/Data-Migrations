@@ -1,0 +1,7 @@
+id,name,note,is_active,created_at
+1,Company,,True,2026-05-06T12:59:27.648518
+2,Own Funds,,True,2026-05-06T12:59:27.648529
+3,Clients,,True,2026-05-06T12:59:27.648532
+4,External,,True,2026-05-06T12:59:27.648534
+5,Loan,,True,2026-05-06T12:59:27.648536
+6,FBM-JPS,,True,2026-05-06T13:12:40.998099

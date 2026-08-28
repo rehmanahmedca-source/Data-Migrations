@@ -1,0 +1,1 @@
+id,delivery_person_id,sale_id,allocation_id,amount_paid,amount_paid_minor,waive_off_amount,waive_off_minor,payment_account_id,method,reference,note,date_posted,idempotency_key,revision,created_by,updated_by,created_at,updated_at,is_void

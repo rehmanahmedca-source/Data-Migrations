@@ -1,0 +1,13 @@
+id,name,direction,is_active,sort_order,notes,created_at,updated_at
+1,Loan Received,in,True,0,,2026-08-17T14:34:21.841280,
+2,Other Bank / Transfer In,in,True,1,,2026-08-17T14:34:21.844429,
+3,Person,in,True,2,,2026-08-17T14:34:21.849946,
+4,Outsider / Other Party,in,True,3,,2026-08-17T14:34:21.850233,
+5,Other Income,in,True,4,,2026-08-17T14:34:21.850621,
+6,Fuel,out,True,5,,2026-08-17T14:34:21.850811,
+7,Vehicle Repair,out,True,6,,2026-08-17T14:34:21.851111,
+8,Food,out,True,7,,2026-08-17T14:34:21.852096,
+9,Loan Paid,out,True,8,,2026-08-17T14:34:21.852637,
+10,Other Bank / Transfer Out,out,True,9,,2026-08-17T14:34:21.852930,
+11,Person,out,True,10,,2026-08-17T14:34:21.854688,
+12,Other Expense,out,True,11,,2026-08-17T14:34:21.854887,

@@ -1,0 +1,2 @@
+id,name,opening_qty,available_qty,rent_per_day,is_void,created_at,updated_at
+1,RERI,9,9,150,False,2026-06-25T14:53:59.566550,2026-06-25T14:53:59.566555
